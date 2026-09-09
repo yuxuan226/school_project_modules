@@ -1,0 +1,12 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: school_project
+  datasource:
+    url: jdbc:mysql://localhost/test_demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  config:
+    import: classpath:satoken-config.yml
