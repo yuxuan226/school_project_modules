@@ -9,4 +9,29 @@ spring:
     password: 111111
     driver-class-name: com.mysql.cj.jdbc.Driver
   config:
-    import: classpath:satoken-config.yml
+    import:
+      - classpath:satoken-config.yml
+      - classpath:knife4j-config.yml
+      - classpath:whitelist-config.yml
+      - classpath:blacklist-config.yml
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  mail:
+    port: 587
+    host: smtp.qq.com
+    username: 2379186530@qq.com
+    password: diwoqijnnozodibj
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
