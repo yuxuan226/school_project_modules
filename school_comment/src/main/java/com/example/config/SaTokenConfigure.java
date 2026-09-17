@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.PostConstruct;
@@ -32,6 +33,12 @@ public class SaTokenConfigure implements WebMvcConfigurer {
     /** knife4j 是否启用，开发环境 true / 生产环境 false */
     @Value("${knife4j.enable:true}")
     private boolean knife4jEnable;
+
+    @Value("${file.path}")
+    private String filePath;
+
+    @Value("${file.url-prefix}")
+    private String urlPrefix;
 
     @PostConstruct
     public void rewriteComponent() {
@@ -67,5 +74,11 @@ public class SaTokenConfigure implements WebMvcConfigurer {
                 .allowedHeaders("*")
                 .allowCredentials(true)
                 .maxAge(3600);
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler(urlPrefix + "**").addResourceLocations("file:" + filePath);
     }
 }

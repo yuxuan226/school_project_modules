@@ -18,6 +18,7 @@
         <module>school_user</module>
         <module>school_comment</module>
         <module>school_security</module>
+        <module>shcool_book</module>
     </modules>
 
     <properties>

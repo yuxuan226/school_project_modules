@@ -35,3 +35,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+file:
+  path: "D:/ZIYU/javaproject/images/"
+  url-prefix: "/images/"
