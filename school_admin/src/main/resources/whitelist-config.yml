@@ -1,0 +1,22 @@
+whitelist:
+  knife4j:
+    - /v2/**
+    - /swagger-resources/**
+    - /swagger-ui/**
+    - /doc.html
+    - /knife4j/**
+    - /webjars/**
+  login:
+    - /login/in
+    - /login/email/sendCode
+    - /login/email/login
+  common:
+    - /favicon.ico
+    - /service-worker.js
+    - /error
+    - /images/**
+    - /book/list
+    - /book/recommend
+    - /book/banner
+    - /book/hot
+    - /book/detail/**

@@ -1,0 +1,15 @@
+# AI 聊天记忆 Redis 配置（使用 2 号库）
+chatai:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 2
+    timeout: 10s
+
+# Embedding 向量存储 Redis 配置（使用 3 号库）
+embedding:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 3
+    timeout: 10s

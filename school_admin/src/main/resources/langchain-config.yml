@@ -1,0 +1,12 @@
+langchain4j:
+  community:
+    dashscope:
+      chat-model:
+        api-key: sk-ws-H.PIYHIPI.X4d9.MEQCIEyVcE8zRm6MEMrKbH1N96C02fYdasX4SOOFqLGddi2yAiAjKCqe8EB6QI4PGLg1TM7wt-IyPoXMGTfAOTaga91L2Q
+        model-name: qwen-plus
+      streaming-chat-model:
+        api-key: sk-ws-H.PIYHIPI.X4d9.MEQCIEyVcE8zRm6MEMrKbH1N96C02fYdasX4SOOFqLGddi2yAiAjKCqe8EB6QI4PGLg1TM7wt-IyPoXMGTfAOTaga91L2Q
+        model-name: qwq-32b
+      embedding-model:
+        api-key: sk-ws-H.PIYHIPI.X4d9.MEQCIEyVcE8zRm6MEMrKbH1N96C02fYdasX4SOOFqLGddi2yAiAjKCqe8EB6QI4PGLg1TM7wt-IyPoXMGTfAOTaga91L2Q
+        model-name: text-embedding-v3

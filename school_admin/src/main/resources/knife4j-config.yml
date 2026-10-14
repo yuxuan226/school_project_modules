@@ -1,0 +1,15 @@
+knife4j:
+  enable: true
+  openapi:
+    title: 学校项目文档
+    description: "智慧图书系统，接口文档"
+    email: gudingwei8@gmail.com
+    concat: 小古
+    version: v4.0
+    license: Apache 2.0
+    group:
+      test1:
+        group-name: 用户管理
+        api-rule: package
+        api-rule-resources:
+          - com.example.controller
