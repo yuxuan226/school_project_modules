@@ -19,10 +19,11 @@
         <module>school_comment</module>
         <module>school_security</module>
         <module>shcool_book</module>
+        <module>school_ai</module>
     </modules>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <mybatis.version>3.5.10</mybatis.version>
         <mybatis.text.version>3.0.3</mybatis.text.version>
         <mybatis.plus.version>3.5.2</mybatis.plus.version>

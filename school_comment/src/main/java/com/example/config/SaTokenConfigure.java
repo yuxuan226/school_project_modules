@@ -61,9 +61,11 @@ public class SaTokenConfigure implements WebMvcConfigurer {
         registry.addInterceptor(new SaInterceptor(handler -> {
                     SaRouter.match("/**")
                             .notMatch(excludePaths)
+                            .notMatch("/book/ai/**")
                             .check(r -> StpUtil.checkLogin());
                 }))
-                .addPathPatterns("/**");
+                .addPathPatterns("/**")
+                .excludePathPatterns("/book/ai/**");
     }
 
     @Override
